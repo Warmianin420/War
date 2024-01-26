@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 0;
+    width: 100px; /* szerokość karty */
+    height: 140px; /* wysokość karty */
+    border: 1px solid black;
+    background-color: white;
+    margin: 0px;
+    background-image: url('images/cardback.png');
+    background-size: 100% 100%; /* Tło zostanie rozciągnięte do wypełnienia całej karty */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.war-card {
+    position: relative; /* Pozycjonowanie względne do kontenera */
+    width: 100px;
+    height: 140px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: -70px; /* Ujemny margines górny, aby karty nachodziły na siebie */
+    z-index: 1; /* Zapewnij, że karty będą się pokrywać w kolejności */
+}
+
+#info {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main-card-container {
+    position: relative; /* Ustawienie kontenera jako punktu odniesienia dla kart */
+    width: 100px; /* Szerokość kontenera dostosowana do szerokości karty */
+    height: 140px; /* Wysokość kontenera dostosowana do wysokości karty */
+    margin: 10px auto; /* Centrowanie kontenera */
+}
+/* Karty wewnątrz kontenera .main-card-container */
+.main-card-container .card {
+    position: absolute; /* Absolutne pozycjonowanie kart względem ich kontenera */
+    top: 0;
+    left: 0;
+    transform: translateY(-31px);
+}
+
+#playerOneWarCards, #playerTwoWarCards {
+    position: relative;
+    margin: 10px 0;
+    min-height: 140px; /* Wymuszenie minimalnej wysokości */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrowanie kart w pionie */
+}
+#playerOneWarCards .war-card:first-child, #playerTwoWarCards .war-card:first-child {
+    margin-top: 0;
+    z-index: 2; /* Pierwsza karta powinna być na wierzchu */
+}
+
+.card-count {
+    font-size: 14px; /* Dostosuj wielkość tekstu do preferencji */
+    margin-top: 10px; /* Dodatkowa przestrzeń nad licznikiem kart */
+}
+
+.card-\32 c { background-image: url('images/2c.png'); }
+.card-\32 d { background-image: url('images/2d.png'); }
+.card-\32 h { background-image: url('images/2h.png'); }
+.card-\32 s { background-image: url('images/2s.png'); }
+.card-\33 c { background-image: url('images/3c.png'); }
+.card-\33 d { background-image: url('images/3d.png'); }
+.card-\33 h { background-image: url('images/3h.png'); }
+.card-\33 s { background-image: url('images/3s.png'); }
+.card-\34 c { background-image: url('images/4c.png'); }
+.card-\34 d { background-image: url('images/4d.png'); }
+.card-\34 h { background-image: url('images/4h.png'); }
+.card-\34 s { background-image: url('images/4s.png'); }
+.card-\35 c { background-image: url('images/5c.png'); }
+.card-\35 d { background-image: url('images/5d.png'); }
+.card-\35 h { background-image: url('images/5h.png'); }
+.card-\35 s { background-image: url('images/5s.png'); }
+.card-\36 c { background-image: url('images/6c.png'); }
+.card-\36 d { background-image: url('images/6d.png'); }
+.card-\36 h { background-image: url('images/6h.png'); }
+.card-\36 s { background-image: url('images/6s.png'); }
+.card-\37 c { background-image: url('images/7c.png'); }
+.card-\37 d { background-image: url('images/7d.png'); }
+.card-\37 h { background-image: url('images/7h.png'); }
+.card-\37 s { background-image: url('images/7s.png'); }
+.card-\38 c { background-image: url('images/8c.png'); }
+.card-\38 d { background-image: url('images/8d.png'); }
+.card-\38 h { background-image: url('images/8h.png'); }
+.card-\38 s { background-image: url('images/8s.png'); }
+.card-\39 c { background-image: url('images/9c.png'); }
+.card-\39 d { background-image: url('images/9d.png'); }
+.card-\39 h { background-image: url('images/9h.png'); }
+.card-\39 s { background-image: url('images/9s.png'); }
+.card-tc { background-image: url('images/tc.png'); }
+.card-td { background-image: url('images/td.png'); }
+.card-th { background-image: url('images/th.png'); }
+.card-ts { background-image: url('images/ts.png'); }
+.card-jc { background-image: url('images/jc.png'); }
+.card-jd { background-image: url('images/jd.png'); }
+.card-jh { background-image: url('images/jh.png'); }
+.card-js { background-image: url('images/js.png'); }
+.card-qc { background-image: url('images/qc.png'); }
+.card-qd { background-image: url('images/qd.png'); }
+.card-qh { background-image: url('images/qh.png'); }
+.card-qs { background-image: url('images/qs.png'); }
+.card-kc { background-image: url('images/kc.png'); }
+.card-kd { background-image: url('images/kd.png'); }
+.card-kh { background-image: url('images/kh.png'); }
+.card-ks { background-image: url('images/ks.png'); }
+.card-ac { background-image: url('images/ac.png'); }
+.card-ad { background-image: url('images/ad.png'); }
+.card-ah { background-image: url('images/ah.png'); }
+.card-as { background-image: url('images/as.png'); }
+

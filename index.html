@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Karciana Wojna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="playerOne">
+            <h2>Gracz 1</h2>
+            <div id="playerOneMainCard" class="card main-card-container"></div>
+            <div id="playerOneWarCards">
+                <div class="war-card"></div>
+                <div class="war-card"></div>
+            </div>
+        </div>
+
+        <div id="gameInfo">
+            <button id="nextRound">Następna Runda</button>
+            <div id="info"></div>
+        </div>
+
+        <div id="playerTwo">
+            <h2>Gracz 2</h2>
+            <div id="playerTwoMainCard" class="card main-card-container"></div>
+            <div id="playerTwoWarCards">
+                <div class="war-card"></div>
+                <div class="war-card"></div>
+
+            </div>
+        </div>
+        <!-- Miejsce w HTML na karty "wojny" -->
+<div id="warZone">
+    <!-- Karty gracza 1 -->
+    <div id="playerOneWarCards"></div>
+    <!-- Karty gracza 2 -->
+    <div id="playerTwoWarCards"></div>
+  </div>
+  <div id="playerOneCardCount">Gracz 1: 26 kart</div>
+<div id="playerTwoCardCount">Gracz 2: 26 kart</div>
+
+        <div id="gameResult" style="display:none;"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
